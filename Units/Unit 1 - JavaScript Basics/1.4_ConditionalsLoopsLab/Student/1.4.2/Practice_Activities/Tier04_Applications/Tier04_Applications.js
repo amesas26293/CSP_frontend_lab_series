@@ -1,2 +1,11 @@
-// Your code goes here. Follow the steps in README.md and run from index.html.
-console.log("TEST - TIER 4")
+function rollTwoDiceNTimes(n = 10) {
+for (let i = 1; i <= n; i++) {
+const die1 = Math.floor(Math.random() * 6) + 1;
+const die2 = Math.floor(Math.random() * 6) + 1;
+if (die1 === die2) {
+console.log(`Roll ${i}: ${die1} & ${die2} — Doubles!`);
+} else {
+console.log(`Roll ${i}: ${die1} & ${die2}`);
+}
+}
+}                             
